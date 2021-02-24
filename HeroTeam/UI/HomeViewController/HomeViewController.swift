@@ -24,9 +24,7 @@ class HomeViewController: UIViewController {
         
         title = "Home"
         
-        Networking.getQuotes {
-            Networking.getInfo()
-        }
+        Networking.getInfo()
         
         view.addSubview(createTeamButton)
         

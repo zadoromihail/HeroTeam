@@ -10,18 +10,7 @@ import Alamofire
 
 class Networking {
     
-    static let decoder: JSONDecoder = {
-        
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        return decoder
-    }()
-    
     private static let urlHeroesString = "https://www.breakingbadapi.com/api/characters"
-    
-    private static let urlQuoteString = "https://type.fit/api/quotes"
-    
-    static var quotes: [Quote]? = []
     
     static var heroes: [Hero]? = [] {
         
@@ -33,7 +22,7 @@ class Networking {
                 
                 var someHero = hero.element
                 someHero.heroUuid = UUID().uuidString
-                someHero.quote = quotes?.randomElement()?.text
+                someHero.quote = Quote.getRandom()
                 someHero.things = Thing.getRandom()
                 someHeroes?.append(someHero)
             }
@@ -48,24 +37,13 @@ class Networking {
             
             AF.request(urlHeroesString, method: .get).response { response in
                 
+                let decoder = JSONDecoder()
+                
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                
                 guard let data = response.data else { return }
                 
                 self.heroes =  try? decoder.decode([Hero].self, from: data)
-            }
-        }
-    }
-    
-    static func getQuotes(completion: @escaping ()->()) {
-        
-        DispatchQueue.global().async {
-            
-            AF.request(urlQuoteString, method: .get).response { response in
-                
-                guard let data = response.data else { return }
-                
-                self.quotes =  try? decoder.decode([Quote].self, from: data)
-                
-                completion()
             }
         }
     }

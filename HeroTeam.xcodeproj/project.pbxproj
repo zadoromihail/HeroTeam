@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		87A15AE825E6A77E00A28815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A15AE725E6A77E00A28815 /* AppDelegate.swift */; };
 		87A15AEA25E6A77E00A28815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A15AE925E6A77E00A28815 /* SceneDelegate.swift */; };
-		87A15AEC25E6A77E00A28815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A15AEB25E6A77E00A28815 /* ViewController.swift */; };
 		87A15AF125E6A78200A28815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A15AF025E6A78200A28815 /* Assets.xcassets */; };
 		87A15AF425E6A78200A28815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A15AF225E6A78200A28815 /* LaunchScreen.storyboard */; };
 		87A15B1925E6A7CC00A28815 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A15B0125E6A7CC00A28815 /* BaseViewController.swift */; };
@@ -44,7 +43,6 @@
 		87A15AE425E6A77E00A28815 /* HeroTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A15AE725E6A77E00A28815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87A15AE925E6A77E00A28815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87A15AEB25E6A77E00A28815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87A15AF025E6A78200A28815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A15AF325E6A78200A28815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A15AF525E6A78200A28815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				87A15B0025E6A7CC00A28815 /* UI */,
 				87A15AE725E6A77E00A28815 /* AppDelegate.swift */,
 				87A15AE925E6A77E00A28815 /* SceneDelegate.swift */,
-				87A15AEB25E6A77E00A28815 /* ViewController.swift */,
 				87A15AF025E6A78200A28815 /* Assets.xcassets */,
 				87A15AF225E6A78200A28815 /* LaunchScreen.storyboard */,
 				87A15AF525E6A78200A28815 /* Info.plist */,
@@ -122,11 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				87A15B0125E6A7CC00A28815 /* BaseViewController.swift */,
+				87A15B1625E6A7CC00A28815 /* TabBarViewController.swift */,
 				87A15B0225E6A7CC00A28815 /* Details */,
 				87A15B0925E6A7CC00A28815 /* Cell */,
 				87A15B0C25E6A7CC00A28815 /* Creation */,
 				87A15B1425E6A7CC00A28815 /* StoredTeamsViewController */,
-				87A15B1625E6A7CC00A28815 /* TabBarViewController.swift */,
 				87A15B1725E6A7CC00A28815 /* HomeViewController */,
 			);
 			path = UI;
@@ -304,7 +301,6 @@
 				87A15B1D25E6A7CC00A28815 /* ChangeTeamLeaderViewController.swift in Sources */,
 				87A15B4025E6A7D700A28815 /* CustomLabel.swift in Sources */,
 				87A15B3925E6A7D700A28815 /* Networking.swift in Sources */,
-				87A15AEC25E6A77E00A28815 /* ViewController.swift in Sources */,
 				87A15B2125E6A7CC00A28815 /* CreateTeamFinalViewController.swift in Sources */,
 				87A15B3B25E6A7D700A28815 /* Quote.swift in Sources */,
 				87A15B3625E6A7D700A28815 /* Storage.swift in Sources */,
